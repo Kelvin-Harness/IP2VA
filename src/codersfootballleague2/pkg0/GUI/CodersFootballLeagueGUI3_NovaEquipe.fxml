@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codersfootballleague2.pkg0.GUI.CodersFootballLeagueGUI3_NovaEquipeController">
+   <children>
+      <Label layoutX="224.0" layoutY="14.0" prefHeight="36.0" prefWidth="184.0" text="Football League">
+         <font>
+            <Font name="Rockwell" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTelaInicial" layoutX="426.0" layoutY="306.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Tela inicial" />
+      <Button fx:id="btnAddJog" layoutX="260.0" layoutY="228.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="123.0" text="Adicionar Jogador" />
+      <Label layoutX="241.0" layoutY="67.0" prefHeight="31.0" prefWidth="147.0" text="Nome da equipe:">
+         <font>
+            <Font name="Corbel" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNomeEq" layoutX="230.0" layoutY="94.0" prefHeight="25.0" prefWidth="176.0" promptText="EqX" />
+      <ImageView fitHeight="106.0" fitWidth="123.0" layoutX="413.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/img-20170215-wa0012.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNomeJog" layoutX="229.0" layoutY="148.0" prefHeight="25.0" prefWidth="184.0" promptText="Nome do jogador" />
+      <TextField fx:id="txtNJog" layoutX="229.0" layoutY="188.0" prefHeight="25.0" prefWidth="184.0" promptText="Número do jogador" />
+      <TableView fx:id="tblNJog" layoutX="8.0" layoutY="21.0" prefHeight="337.0" prefWidth="214.0">
+        <columns>
+          <TableColumn fx:id="tblNomes" prefWidth="108.0" text="Nome:" />
+          <TableColumn fx:id="tblNC" prefWidth="105.0" text="Num. da camisa:" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

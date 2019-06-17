@@ -3,21 +3,15 @@ package codersfootballleague2.pkg0.GUI;
 
 
 
+import codersfootballleague2.pkg0.dados.RepositorioCampeonato;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 
 public class CodersFootballLeagueGUIController implements Initializable , EventHandler<Event>  {
@@ -29,8 +23,6 @@ public class CodersFootballLeagueGUIController implements Initializable , EventH
     @FXML
     private TextField txtC; 
     @FXML
-    private PasswordField txtSenha;
-    @FXML
     private Button btnNovaEq;
 
     @Override
@@ -38,38 +30,27 @@ public class CodersFootballLeagueGUIController implements Initializable , EventH
         
         if(event.getSource().equals(btnNovoC)){
             
-            Node node = (Node) event.getSource();
-
-            Stage stage = (Stage) node.getScene().getWindow();
-            Parent root = null;
-            try {
-            root = FXMLLoader.load(getClass().getResource("CodersFootballLeagueGUI2_NovoCampeonato.fxml"));
-            } catch (Exception ex) {
-            
-            }
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+            Main.changeScene("CodersFootballLeagueGUI2_NovoCampeonato");
         }
                 
         if(event.getSource().equals(btnNovaEq)){
             
+            Main.changeScene("CodersFootballLeagueGUI3_NovaEquipe");
+            
         }  
-        
-        
+              
         if(event.getSource().equals(btnEntrar)){
             
             
-
-            
+            Main.changeScene("CodersFootballLeagueGUI4_PartidasCampeonato");  
+                   
         }
     
     }
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }

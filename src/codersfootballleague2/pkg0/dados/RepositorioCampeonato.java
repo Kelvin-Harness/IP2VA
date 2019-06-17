@@ -10,10 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- *
- * @author Marco 10
- */
+
 public class RepositorioCampeonato {
    
         ArrayList<Campeonato>campeonatos;

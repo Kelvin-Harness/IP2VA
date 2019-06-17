@@ -15,10 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-/**
- *
- * @author Marco 10
- */
+
 public class CodersFootballLeagueGUI2_NovoCampeonatoController implements Initializable , EventHandler<Event> {
     @FXML
     private Button btnAddEquipe;
@@ -37,7 +34,7 @@ public class CodersFootballLeagueGUI2_NovoCampeonatoController implements Initia
             
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override

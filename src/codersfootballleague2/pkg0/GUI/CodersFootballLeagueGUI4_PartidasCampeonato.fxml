@@ -22,7 +22,7 @@
       <Button fx:id="btnAddResult" layoutX="242.0" layoutY="147.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="123.0" text="Adicionar resultado" />
       <ImageView fitHeight="106.0" fitWidth="123.0" layoutX="413.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../Downloads/img-20170215-wa0012.jpg" />
+            <Image url="@imagens/img-20170215-wa0012.jpg" />
          </image>
       </ImageView>
       <ChoiceBox fx:id="slctTime1" layoutX="35.0" layoutY="95.0" prefHeight="25.0" prefWidth="123.0" />
